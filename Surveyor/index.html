@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Survey & GIS Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-brand-text">Survey Specialist</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="#expertise" class="nav-link" data-section="expertise">Keahlian</a>
+                <a href="#projects" class="nav-link active" data-section="projects">Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Surveyor & GIS Professional</div>
+                <h1 class="hero-title">
+                    Spesialis Survey &
+                    <span class="highlight">Pemetaan Digital</span>
+                </h1>
+                <p class="hero-description">
+                    Berpengalaman dalam survei lapangan menggunakan peralatan modern, pengolahan data geospasial,
+                    dan pembuatan peta tematik.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        Project Pilihan
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('expertise')">
+                        Keahlian Saya
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../Logo/DJI_0183.JPG" alt="Survey Equipment" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Keahlian & Kompetensi</h2>
+                <p class="section-subtitle">Penguasaan teknologi survey modern dan analisis geospasial</p>
+            </div>
+
+            <div class="expertise-grid">
+                <!-- Survey Equipment Skills -->
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="card-icon survey">📐</div>
+                        <h3>Peralatan Survey</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Total Station</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GPS/GNSS RTK</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Theodolite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Waterpass/Level</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UAV/Drone Mapping</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIS Software -->
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="card-icon gis">🗺️</div>
+                        <h3>Software</h3>
+                    </div>
+                    <div class="software-grid">
+                        <div class="software-item">
+                            <img src="../Logo/Software/Arcgis.png" alt="ArcGIS" class="software-logo">
+                            <span>ArcGIS Dekstop</span>
+                        </div>
+                        <div class="software-item">
+                            <img src="../Logo/Software/Drone Deploy.jpg" alt="Drone Deploy" class="software-logo">
+                            <span>Drone Deploy</span>
+                        </div>
+                        <div class="software-item">
+                            <img src="../Logo/Software/ODK Collect.png" alt="ODK Collect" class="software-logo">
+                            <span>ODK Collect</span>
+                        </div>
+                        <div class="software-item">
+                            <img src="../Logo/Software/Mobile Topographer.png" alt="Mobile Topographer"
+                                class="software-logo">
+                            <span>Mobile Topographer</span>
+                        </div>
+                        <div class="software-item">
+                            <img src="../Logo/Software/Avenza Map.png" alt="Avenza Map" class="software-logo">
+                            <span>Avenza Map</span>
+                        </div>
+                        <div class="software-item">
+                            <img src="../Logo/Software/GPS Essential.png" alt="GPS Essential" class="software-logo">
+                            <span>GPS Essential</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio Proyek</h2>
+                <p class="section-subtitle">Beberapa proyek terpilih yang telah saya kerjakan</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="../Logo/Surveyor/Peta.png" alt="Pemetaan Logistik Kebencanaan">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pemetaan Pemenuhan Logistik Kebencanaan D.I Yogyakarta</h3>
+                        <p class="project-description" style="text-align: justify;">
+                            Pemetaan distribusi logistik untuk mendukung kesiapsiagaan dan penanggulangan bencana di wilayah D.I Yogyakarta.
+                        </p>
+                        <button class="view-project-btn" onclick="openModal('modal1')">Lihat Detail</button>
+                        <div class="project-tags">
+                            <span class="tag">Mapping</span>
+                            <span class="tag">GIS Analysis</span>
+                            <span class="tag">Data Collection</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Kabupaten</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Paket Logistik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="../Logo/Surveyor/GPS.png" alt="GPS Geodetik Survey">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Penelitian Kekritisan Lahan - Kec. Loano, Purworejo</h3>
+                        <p class="project-description" style="text-align: justify;">
+                            Analisis spasial tingkat kekritisan lahan menggunakan data GPS Geodetik dan orthophoto mapping di Kecamatan Loano.
+                        </p>
+                        <button class="view-project-btn" onclick="openModal('modal2')">Lihat Detail</button>
+                        <div class="project-tags">
+                            <span class="tag">GPS Geodetik</span>
+                            <span class="tag">Remote Sensing</span>
+                            <span class="tag">Orthophoto</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">25</span>
+                                <span class="stat-label">Data Points</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Resolution (cm)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Pemetaan Pemenuhan Logistik Kebencanaan D.I Yogyakarta</h2>
+            <img src="../Logo/Surveyor/Paket Logistik Pangan.jpg" alt="Project Detail" class="modal-image">
+            <div class="modal-body">
+                <h3>Detail Proyek</h3>
+                <p style="text-align: justify;">
+                    Proyek ini merupakan bagian dari upaya pemerintah Daerah Istimewa Yogyakarta dalam meningkatkan
+                    kesiapsiagaan bencana melalui pemetaan logistik yang komprehensif. Sebagai surveyor lapangan, saya
+                    bertanggung jawab dalam:
+                </p>
+                <ul>
+                    <li>Pengumpulan data primer melalui survey langsung ke 78 desa di 5 kabupaten</li>
+                    <li>Verifikasi data sekunder dari berbagai instansi terkait</li>
+                    <li>Koordinasi dengan BPBD, Dinsos, Dinkes, dan Dukcapil untuk sinkronisasi data</li>
+                    <li>Pemetaan distribusi kelompok rentan berdasarkan data kependudukan</li>
+                    <li>Analisis kebutuhan logistik per wilayah berdasarkan jumlah penduduk dan tingkat kerentanan</li>
+                </ul>
+
+                <h3>Hasil dan Dampak</h3>
+                <p style="text-align: justify;">
+                    Hasil pemetaan menunjukkan distribusi kebutuhan logistik yang tidak merata antar wilayah, dengan
+                    konsentrasi tertinggi di daerah perkotaan dan pesisir. Rekomendasi yang dihasilkan telah diadopsi
+                    oleh BPBD DIY untuk perencanaan distribusi gudang logistik dan jalur evakuasi. Sistem ini juga
+                    membantu dalam pengambilan keputusan cepat saat terjadi bencana.
+                </p>
+
+                <div class="project-details">
+                    <div class="detail-item">
+                        <strong>Durasi:</strong> 3 bulan (Agustus - Desember 2021)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Tim:</strong> 9 orang (4 surveyor, 2 data analis, 1 analis GIS, 1 koordinator lapangan, 1 project
+                        manager)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Klien:</strong> Badan Penanggulangan Bencana Daerah Istimewa Yogyakarta
+                    </div>
+                    <div class="detail-item">
+                        <strong>Software:</strong> ArcGIS Dekstop
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>GPS Geodetik & Orthophoto Mapping - Kec. Loano, Purworejo</h2>
+            <img src="../Logo/Surveyor/Geodetik.png" alt="Project Detail" class="modal-image">
+            <div class="modal-body">
+                <h3>Detail Proyek</h3>
+                <p style="text-align: justify;">
+                    Penelitian ini bertujuan untuk menganalisis tingkat kekritisan lahan di Kecamatan Loano, Kabupaten
+                    Purworejo sebagai bagian dari studi mitigasi bencana longsor. Peran saya sebagai surveyor geodetik
+                    meliputi:
+                </p>
+                <ul>
+                    <li>Pemasangan dan pengukuran 25 titik GPS Geodetik sebagai GCP (Ground Control Point)</li>
+                    <li>Pengukuran 15 titik ICP (Independent Check Point) untuk validasi akurasi</li>
+                    <li>Koordinasi dengan pilot drone untuk pelaksanaan pemotretan udara</li>
+                    <li>Pengolahan data GPS menggunakan software Trimble Business Center</li>
+                    <li>Processing orthophoto menggunakan Agisoft Photoscan Professional</li>
+                </ul>
+
+                <h3>Spesifikasi Teknis</h3>
+                <ul>
+                    <li><strong>Alat GPS:</strong> GPS Navcom SF-2050 (akurasi horizontal ±10 cm)</li>
+                    <li><strong>Metode:</strong> RTK-NTRIP dengan durasi observasi 30 menit per titik</li>
+                    <li><strong>Sistem Koordinat:</strong> UTM Zone 49S, datum WGS84</li>
+                    <li><strong>Resolusi Orthophoto:</strong> 5 cm/pixel (GSD - Ground Sample Distance)</li>
+                    </li>
+                </ul>
+
+                <h3>Hasil dan Analisis</h3>
+                <p style="text-align: justify;">
+                    Orthophoto yang dihasilkan memiliki akurasi horizontal RMSE ±15 cm, memenuhi standar untuk pemetaan
+                    skala 1:2.500. Data ini kemudian digunakan untuk analisis kemiringan lereng, identifikasi area rawan
+                    longsor, dan pemodelan aliran permukaan. Hasil penelitian menunjukkan 35% area memiliki tingkat
+                    kekritisan tinggi yang memerlukan perhatian khusus dalam perencanaan tata ruang.
+                </p>
+
+                <div class="project-details">
+                    <div class="detail-item">
+                        <strong>Durasi:</strong> 5 Hari (Juni - Agustus 2023)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Tim:</strong> 3 orang (1 geodetik surveyor, 1 analis GIS, 1 peneliti utama)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Institusi:</strong> Universitas Gadjah Mada - Fakultas Geografi
+                    </div>
+                    <div class="detail-item">
+                        <strong>Software:</strong> Agisoft Metashape, ArcGIS Desktop, Global Mapper
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

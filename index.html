@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio GIS - Heri Basa Sinaga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="../Final/Logo/DJI_0183.JPG" alt="Profile">
+                <div class="profile-glow"></div>
+            </div>
+            <h2 class="profile-name">Heri Basa Sinaga</h2>
+            <h3 class="profile-title">GIS Specialist</h3>
+        </div>
+
+        <nav class="navigation">
+            <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>Tentang</span>
+            </a>
+            <a href="#experience" class="nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Pengalaman</span>
+            </a>
+            <a href="#projects" class="nav-link">
+                <i class="fas fa-folder-open"></i>
+                <span>Proyek</span>
+            </a>
+            <a href="#education" class="nav-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Pendidikan</span>
+            </a>
+            <a href="#skills" class="nav-link">
+                <i class="fas fa-bolt"></i>
+                <span>Skill</span>
+            </a>
+            <a href="#certificate" class="nav-link">
+                <i class="fas fa-award"></i>
+                <span>Sertifikat</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="about" class="section hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Halo, Saya Heri Basa Sinaga</h1>
+                <div class="hero-badges">
+                    <span class="badge badge-cyan">GIS Specialist</span>
+                    <span class="badge badge-purple">Drone Pilot</span>
+                    <span class="badge badge-pink">Surveyor Geospasial</span>
+                    <span class="badge badge-yellow">HSE</span>
+                </div>
+                <div class="hero-description">
+                    <p><strong>GIS Specialist & HSE Officer</strong> yang memadukan presisi pemetaan digital dengan penerapan K3 di
+                        lapangan. Berpengalaman dalam <strong>drone mapping, analisis spasial, dan manajemen keselamatan kerja</strong>,
+                        menghadirkan data akurat sekaligus memastikan setiap proyek berjalan aman dan efisien.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-cyan">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Proyek Selesai</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-green">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="stat-value">95%</div>
+                        <div class="stat-label">Tingkat Akurasi</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-purple">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-value">30%</div>
+                        <div class="stat-label">Peningkatan Efisiensi</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-orange">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-value">20+</div>
+                        <div class="stat-label">Tim Terlatih</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">💼 Pengalaman Kerja</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Pilot Drone</h3>
+                            <p class="company">PT Adare Multi Service</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Desember 2022 – Agustus 2024 </span>
+                                <span><i class="fas fa-map-marker-alt"></i>Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Memimpin akuisisi data udara untuk berbagai proyek pemetaan lingkungan dengan fokus pada
+                            AMDAL industri. Bertanggung jawab atas perencanaan jalur terbang, pengoperasian drone,
+                            hingga pengolahan data menjadi produk spasial presisi..</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Merencanakan jalur terbang pada 6 proyek AMDAL, memastikan akuisisi data sesuai
+                                kebutuhan analisis lingkungan</li>
+                            <li>Menghasilkan orthophoto & DEM dengan akurasi ±1–3 cm untuk mendukung mitigasi risiko
+                            </li>
+                            <li>Menyediakan citra beresolusi tinggi yang digunakan dalam kajian dampak lingkungan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Pilot Drone</h3>
+                            <p class="company">PT Inspirasi Multitama Andalan</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Oktober 2022 – Desember 2022</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Mengkoordinasikan tim pemetaan udara dan survei topografi untuk pemetaan bahaya abrasi
+                            pantai.</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Mengkoordinasi tim pengukuran garis pantai sepanjang 50 km di Kabupaten Bantul</li>
+                            <li>Melaksanakan pemetaan udara menggunakan DJI Phantom 4 RTK & survei topografi</li>
+                            <li>Mengolah data spasial untuk pemetaan bahaya abrasi pantai dan mitigasi bencana</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Pilot Drone</h3>
+                            <p class="company">Fakultas Pertanian & Vokasi, Universitas Gadjah Mada</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Juni 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Memimpin akuisisi data udara untuk analisis kesehatan tanaman di perkebunan PTPN VII.
+                        </p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Mengoptimalkan workflow pemetaan sehingga survei lapangan 25% lebih cepat</li>
+                            <li>Melaksanakan pemetaan drone seluas 70 ha menggunakan DJI Mavic 3 Multispektral (resolusi
+                                2,7 cm/pixel, akurasi ±1–3 cm)</li>
+                            <li>Menyediakan data multispektral presisi tinggi yang mempercepat deteksi tanaman
+                                bermasalah hingga 30% lebih efektif</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>GIS Konsultan (Freelance)</h3>
+                            <p class="company"></p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Maret 2024 - Maret 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Depok, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Konsultan GIS freelance untuk pembaruan peta dasar dan digitasi citra spasial.</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Memperbarui peta dasar menggunakan ArcGIS & Global Mapper dengan akurasi 95% </li>
+                            <li>Melakukan interpretasi dan digitasi citra wilayah Cipayung & Margonda, meningkatkan
+                                akurasi hingga 90%</li>
+                            <li>Menghasilkan data spasial bertopologi bersih (0 error) dengan validitas 100%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Surveyor Tim Leader</h3>
+                            <p class="company">CV Buana Wirapersada</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Agustus 2021 – Desember 2021</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Memimpin tim survei logistik kebencanaan di seluruh kabupaten D.I. Yogyakarta.</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Memimpin 5 anggota tim survei dalam pengumpulan data logistik kebencanaan</li>
+                            <li>Berkoordinasi dengan BPBD, pemerintah daerah, serta lembaga logistik</li>
+                            <li>Merancang strategi pengambilan data yang menghemat ±30% waktu survei dengan kelengkapan
+                                data 95%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Operator GIS</h3>
+                            <p class="company">CV Hycon Andrameda</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Juni 2021 – Desember 2021</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Operator GIS untuk pemetaan saluran pembuangan di Jawa Tengah melalui aplikasi PUPR.</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Memperbarui data spasial saluran pembuangan (bendungan, pintu air, gorong-gorong,
+                                saluran)</li>
+                            <li>Membuat 300+ peta saluran pembuangan di Kabupaten Cilacap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>Asisten Akademik dan Riset</h3>
+                            <p class="company">Sekolah Vokasi, Universitas Gadjah Mada</p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> Agustus 2019 – Juli 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>Asisten akademik dan riset untuk kegiatan praktikum, penelitian, dan pengabdian masyarakat.
+                        </p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Mendampingi 300+ mahasiswa dalam praktikum survei lapangan dan pengolahan data
+                                geospasial</li>
+                            <li>Melatih penggunaan Total Station, GNSS RTK, dan Drone/UAV</li>
+                            <li>Terlibat dalam penelitian berbasis penginderaan jauh (abrasi pantai, erosi parit)</li>
+                            <li>Mendukung pemetaan wilayah dan pelatihan SIG bagi instansi dan masyarakat</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <div class="experience-info">
+                            <h3>HSE officer</h3>
+                            <p class="company"></p>
+                            <div class="experience-meta">
+                                <span><i class="fas fa-calendar"></i> September 2025 – Oktober 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Sibolga, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="experience-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>HSE officer .</p>
+                        <h4>Pencapaian Utama:</h4>
+                        <ul>
+                            <li>Melakukan pengawasan penerapan prosedur K3 di area kerja selama kegiatan pemasangan dan
+                                perawatan peralatan CEMS</li>
+                            <li>Memastikan seluruh tenaga kerja dan tamu proyek memiliki izin kerja dan izin masuk area
+                                PLTU sesuai standar keselamatan</li>
+                            <li>Melakukan pemeriksaan APD, kondisi area kerja, serta kelayakan alat bantu kerja sebelum
+                                kegiatan dimulai</li>
+                            <li>Membantu pelaksanaan toolbox meeting harian dan memberikan pengingat K3 kepada pekerja
+                                dilapangan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">🛠 Proyek Unggulan</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-status completed">Completed</div>
+                    <div class="project-image">
+                        <img src="./Logo/New folder/1.png" alt="Drone Mapping">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Drone Mapping</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p>Pemetaan dan monitoring menggunakan drone untuk mendukung survei topografi, analisis
+                            perubahan lahan, serta berbagai kebutuhan proyek.</p>
+                        <div class="project-tags">
+                            <span class="tag">Drone</span>
+                            <span class="tag">Multispectral Drone</span>
+                            <span class="tag">Photogrammetry</span>
+                        </div>
+                        <a href="./Drone/index.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-status completed">Completed</div>
+                    <div class="project-image">
+                        <img src="./Logo/New folder/3.png" alt="Operator GIS">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Operator GIS</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p> Pengolahan data spasial dan analisis geospasial untuk menghasilkan peta tematik dan basis
+                            data yang mendukung pengambilan keputusan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Landcover</span>
+                            <span class="tag">Satellite Imagery</span>
+                            <span class="tag">Spatial Analysis</span>
+                        </div>
+                        <a href="./GIS/index.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-status completed">Completed</div>
+                    <div class="project-image">
+                        <img src="./Logo/New folder/2.png" alt="Surveyor">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Surveyor</h3>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <p>Pelaksanaan survei lapangan dengan GNSS, total station, dan UAV untuk memperoleh data
+                            geospasial yang presisi.</p>
+                        <div class="project-tags">
+                            <span class="tag">GPS</span>
+                            <span class="tag">Logistik</span>
+                            <span class="tag">Topography</span>
+                        </div>
+                        <a href="./Surveyor/index.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-status completed">Completed</div>
+                    <div class="project-image">
+                        <img src="./Logo/Asisten/Praktikum.jpg" alt="Asisten">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Asisten</h3>
+                            <span class="project-date">2019-2024</span>
+                        </div>
+                        <p>Mendukung penelitian di bidang GIS, survei udara, dan analisis lingkungan kritis melalui
+                            pengolahan data dan pemetaan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Methodology</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <a href="../Baru/Asisten/index.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-status on-progress">On Progress</div>
+                    <div class="project-image">
+                        <img src="../../" alt="HSE">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>HSE</h3>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <p>Bertanggung jawab mengawasi pekerjaan dengan memastikan penerapan budaya K3, identifikasi
+                            potensi bahaya, dan kepatuhan prosedur kerja.</p>
+                        <div class="project-tags">
+                            <span class="tag">Safety</span>
+                            <span class="tag">Risk Management</span>
+                            <span class="tag">Working Permit</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">🎓 Pendidikan</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-content">
+                        <h3>Universitas Gadjah Mada</h3>
+                        <p class="education-degree">S1 Penginderaan Jauh dan Sistem Informasi Geografi</p>
+                        <p class="education-period">2016 - 2021 • Yogyakarta</p>
+                        <div class="education-badges">
+                            <span class="education-badge">Tugas Akhir:Penyusunan Basis Data Spasial Sebaran Objek Wisata
+                                Berbasis Web Di Kabupaten Purworejo</span>
+                        </div>
+                    </div>
+                    <div class="education-logo">UGM</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-content">
+                        <h3>Universitas Muhammadiyah Surakarta</h3>
+                        <p class="education-degree">S2 Geografi</p>
+                        <p class="education-period">2021 - 2024 • Surakarta</p>
+                        <div class="education-badges">
+                            <span class="education-badge">Skripsi: Analisis Persebaran Spasial Objek Wisata Kabupaten
+                                Purworejo Menggunakan Webgis</span>
+                        </div>
+                    </div>
+                    <div class="education-logo">UMS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">⚡ Keahlian & Kompetensi</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Kepemimpinan Tim & Manajemen Proyek</li>
+                        <li>Komunikasi Teknis & Presentasi</li>
+                        <li>Problem Solving & Analytical Thinking</li>
+                        <li>Adaptabilitas & Continuous Learning</li>
+                        <li>Kolaborasi Lintas Departemen</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Drone Mapping & Photogrammetry</li>
+                        <li>GNSS RTK & Total Station Survey</li>
+                        <li>Remote Sensing & Image Processing</li>
+                        <li>Spatial Analysis & Geostatistics</li>
+                        <li>Database Design & Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Software Expertise</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>ArcGIS Pro & ArcGIS Online</li>
+                        <li>QGIS & PostGIS</li>
+                        <li>Agisoft Metashape & Pix4D</li>
+                        <li>Global Mapper & ENVI</li>
+                        <li>AutoCAD & Python Scripting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Section -->
+        <section id="certificate" class="section">
+            <h2 class="section-title">📜 Sertifikat Profesional</h2>
+            <div class="certificate-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <div class="slide active">
+                            <img src="../Final/Logo/Sertifikat/APDI.jpg" alt="Pilot Drone">
+                            <div class="slide-overlay">
+                                <div class="slide-content">
+                                    <h3>Drone Pilot</h3>
+                                    <p>Asosiasi Pilot Drone Indonesia</p>
+                                    <span class="slide-date">2024</span>
+                                    <div class="slide-id">ID: 8854-2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="../Final/Logo/Sertifikat/" alt="Basic First Aid">
+                            <div class="slide-overlay">
+                                <div class="slide-content">
+                                    <h3>Ahli K3 Umum</h3>
+                                    <p>Kementrian Ketenagakerjaan RI</p>
+                                    <span class="slide-date">2025</span>
+                                    <div class="slide-id">ID: K3-2025-001</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="../Final/Logo/Sertifikat/Sertifikat BFA.jpg" alt="Basic First Aid">
+                            <div class="slide-overlay">
+                                <div class="slide-content">
+                                    <h3>Certified Basic First Aid</h3>
+                                    <p>Mutiara Mutu Sertifikasi</p>
+                                    <span class="slide-date">2025</span>
+                                    <div class="slide-id">ID: BFA-2025-123</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.pexels.com/photos/73833/hello-i-am-a-firefighter-firefighter-fire-73833.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                alt="Basic Fire Fighting">
+                            <div class="slide-overlay">
+                                <div class="slide-content">
+                                    <h3>Basic Fire Fighting</h3>
+                                    <p>Mutiara Mutu Sertifikasi</p>
+                                    <span class="slide-date">2025</span>
+                                    <div class="slide-id">ID: BFF-2025-456</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" onclick="prevSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+                <div class="slider-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 Heri Basa Sinaga</p>
+                    <p class="footer-subtitle">Portfolio GIS Specialist & Geospatial Surveyor</p>
+                </div>
+                <div class="footer-status">
+                    <div class="status-indicator"></div>
+                    <span>Available for Projects</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

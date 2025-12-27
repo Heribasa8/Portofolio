@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Mapping Portfolio - Professional Surveying Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div class="navbar-avatar">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5">
+                        </path>
+                        <circle cx="12" cy="13" r="3"></circle>
+                    </svg>
+                </div>
+                <span class="navbar-name">Drone Mapping Expert</span>
+            </div>
+            <div class="navbar-right">
+                <a href="../index.html" class="navbar-link">Home</a>
+                <a href="#projects" class="navbar-link">Projects</a>
+                <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <a href="../index.html"mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#projects" class="mobile-link" onclick="closeMobileMenu()">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5">
+                    </path>
+                    <circle cx="12" cy="13" r="3"></circle>
+                </svg>
+            </div>
+            <h1 class="hero-title">
+                Drone Mapping
+                <span class="hero-gradient">Expert</span>
+            </h1>
+            <p class="hero-subtitle">
+                Spesialist dalam pemetaan menggunakan teknologi drone dengan pengalaman lebih dari 5 tahun dalam
+                berbagai proyek mulai dari AMDAL, pertanian, Kebencanaan, hingga monitoring lingkungan.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">Projek Selesai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Sektor Bidang yang dilayani</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Tingkat Akurasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Proyek Unggulan</h2>
+                <p class="section-subtitle">
+                    Eksplorasi berbagai proyek pemetaan drone yang telah saya kerjakan dengan teknologi terdepan
+                    dan hasil yang presisi tinggi.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 - AMDAL -->
+                <div class="card" onclick="openModal('modal1')">
+                    <div class="card-header">
+                        <div>
+                            <span class="card-category amdal">AMDAL</span>
+                            <h3 class="card-title">Pemetaan AMDAL</h3>
+                        </div>
+                        <svg class="card-arrow" viewBox="0 0 24 24">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </div>
+                    <p class="card-description">
+                        Monitoring lingkungan menggunakan drone untuk pemenuhan dokumen AMDAL pada beberapa industri.
+                    </p>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>DIY, Jawa Tengah, dan Bali</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                            <span>2022-2024</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">Reports</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Kebencanaan -->
+                <div class="card" onclick="openModal('modal2')">
+                    <div class="card-header">
+                        <div>
+                            <span class="card-category kebencanaan">Kebencanaan</span>
+                            <h3 class="card-title">Pemetaan Abrasi Pantai</h3>
+                        </div>
+                        <svg class="card-arrow" viewBox="0 0 24 24">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </div>
+                    <p class="card-description">
+                        Pemetaan perubahan garis pantai akibat abrasi di sepanjang pantai Kabupaten Bantul
+                    </p>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Kabupaten Bantul</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                            <span>2021</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Reports</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Sedimentasi -->
+                <div class="card" onclick="openModal('modal3')">
+                    <div class="card-header">
+                        <div>
+                            <span class="card-category urban">Morfosedimen</span>
+                            <h3 class="card-title">Pemetaan Morfosedimen</h3>
+                        </div>
+                        <svg class="card-arrow" viewBox="0 0 24 24">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </div>
+                    <p class="card-description">
+                        Pemetaan drone untuk analisis morfosedimentasi wilayah pesisir.
+                    </p>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Kabupaten Bantul dan Gunung Kidul</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">10</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10</div>
+                            <div class="stat-label">Reports</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 - Pertanian -->
+                <div class="card" onclick="openModal('modal4')">
+                    <div class="card-header">
+                        <div>
+                            <span class="card-category pertanian">Pertanian</span>
+                            <h3 class="card-title">Pemetaan Perkebunan Tebu</h3>
+                        </div>
+                        <svg class="card-arrow" viewBox="0 0 24 24">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </div>
+                    <p class="card-description">
+                        Survey drone untuk monitoring kondisi lahan dan tanaman perkebunan tebu.
+                    </p>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Lampung Utara (PTPN Sektor VII)</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" viewBox="0 0 24 24">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                            <span>2023-2024</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">2</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">2</div>
+                            <div class="stat-label">Reports</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Expertise & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-title drone-hardware">Drone Hardware</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">DJI Phantom 4 RTK</li>
+                        <li class="skill-item">DJI Mavic 3 Multispectral</li>
+                        <li class="skill-item">DJI Phantom 4 Pro</li>
+                        <li class="skill-item">DJI Mavic 2 Zoom</li>
+                        <li class="skill-item">GPS Geodetik Trimble</li>
+                        <li class="skill-item">GPS Geodetik Navcom</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title software">Software</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Agisoft Metashape</li>
+                        <li class="skill-item">Drone Deploy</li>
+                        <li class="skill-item">ArcGIS Pro</li>
+                        <li class="skill-item">QGIS</li>
+                        <li class="skill-item">PCI Geomatika</li>
+                        <li class="skill-item">Global Mapper</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title applications">Applications</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Topographic Survey</li>
+                        <li class="skill-item">3D Modeling</li>
+                        <li class="skill-item">Volume Calculation</li>
+                        <li class="skill-item">Change Detection</li>
+                        <li class="skill-item">NDVI Analysis</li>
+                        <li class="skill-item">Environmental Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1 - AMDAL -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Pemetaan AMDAL</h2>
+                </div>
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-layout">
+                    <div class="modal-image-section enlarged">
+                        <div class="modal-slider">
+                            <div class="slide active">
+                                <img src="../Logo/Drone/Amdal/1. RS Nur Hidayah.JPG" alt="Rumah Sakit Nur Hidayah">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Amdal/2. Bengawantex.JPG" alt="PT. Bengawantex">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Amdal/3. Karma Kandara.JPG" alt="Resort Karma Kandara">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Amdal/4. TPS Food.JPG" alt="PT. Tiga Pilar Sejahtera Food">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Amdal/5. Suradi Sejahtera.JPG" alt="PT. Suradi Sejahtera">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Amdal/6. Samitex.JPG" alt="Samitex">
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="prev-btn" onclick="changeSlide('modal1', -1)">❮</button>
+                            <button class="next-btn" onclick="changeSlide('modal1', 1)">❯</button>
+                        </div>
+                        <div class="slide-indicators" id="indicators-modal1"></div>
+                    </div>
+                    <div class="modal-content-section">
+                        <div class="slide-content active">
+                            <h3 class="slide-title">Rumah Sakit Nur Hidayah</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Melakukan akuisisi data foto udara menggunakan drone untuk mendukung penyusunan dokumen
+                                AMDAL Rumah Sakit Nur Hidayah. Data udara diproses menjadi orthophoto bergeoreferensi
+                                yang digunakan sebagai peta dasar untuk identifikasi penggunaan lahan, delineasi area
+                                terdampak, serta analisis kondisi lingkungan sekitar.</p>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Menentukan jalur terbang paling efektif sesuai area studi</li>
+                                        <li>Melakukan akuisisi foto udara dengan drone</li>
+                                        <li>Mengolah foto udara menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>Peta tata guna lahan rumah sakit</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">PT. Bengawantex</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Karanganyar, Jawa Tengah</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Melaksanakan akuisisi data udara menggunakan drone di kawasan industri tekstil PT
+                                Bengawantex. Data foto udara diolah menjadi orthophoto bergeoreferensi untuk mendukung
+                                penyusunan dokumen AMDAL serta analisis lingkungan sekitar area industri.
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Menentukan jalur terbang optimal untuk area industri</li>
+                                        <li>Melakukan pemotretan udara dengan drone</li>
+                                        <li>Mengolah citra foto menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>Peta tata guna lahan kawsan industri</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Karma Kandara Resort</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Badung, Bali</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Mengambil data foto udara menggunakan drone di kawasan pesisir Karma Kandara Resort,
+                                Bali. Hasil pemotretan diolah menjadi orthophoto bergeoreferensi yang mendukung analisis
+                                lingkungan dalam dokumen AMDAL, khususnya terkait pengelolaan lahan pesisir.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Menentukan jalur terbang sesuai kontur pesisir</li>
+                                        <li>Melakukan akuisisi foto udara dengan drone</li>
+                                        <li>Mengolah foto udara menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>Peta tata guna lahan kawasan resort</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">PT. Tiga Pilar Sejahtera Food</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Sragen, Jawa Tengah</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Melakukan akuisisi data udara dengan drone di kawasan industri pangan PT Tiga Pilar
+                                Sejahtera Food. Data hasil pemotretan udara diproses menjadi orthophoto bergeoreferensi
+                                untuk mendukung penyusunan dokumen AMDAL..
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Menentukan jalur terbang untuk area industri pangan</li>
+                                        <li>Melakukan akuisisi foto udara dengan drone</li>
+                                        <li>Mengolah foto udara menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>Peta tata guna lahan industri pangan</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">PT. Suradi Sejahtera</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Melaksanakan pemotretan udara menggunakan drone di kawasan industri semen PT Suradi
+                                Sejahtera. Data hasil pemotretan diolah menjadi orthophoto bergeoreferensi yang
+                                digunakan sebagai dasar analisis spasial dalam dokumen AMDAL.
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Merencanakan jalur terbang sesuai area industri</li>
+                                        <li>Melakukan akuisisi foto udara dengan drone</li>
+                                        <li>Mengolah foto udara menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>Peta tata guna lahan industri semen</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">PT. Samitex</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Mengambil data foto udara menggunakan drone di kawasan industri tekstil PT Samitex.
+                                Citra hasil akuisisi diolah menjadi orthophoto bergeoreferensi yang dimanfaatkan sebagai
+                                peta dasar penyusunan dokumen AMDAL.
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <ul class="detail-list">
+                                        <li>Menentukan jalur terbang untuk area industri tekstil</li>
+                                        <li>Melakukan akuisisi foto udara dengan drone</li>
+                                        <li>Mengolah foto udara menjadi orthophoto bergeoreferensi</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Orthophoto bergeoreferensi</li>
+                                        <li>PPeta tata guna lahan kawasan industri</li>
+                                        <li>Data spasial untuk penyusunan dokumen AMDAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Kebencanaan -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-category kebencanaan">Kebencanaan</span>
+                    <h2 class="modal-title">Identifikasi Tingkat Risiko Abrasi Pantai Bantul</h2>
+                </div>
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" style="text-align: justify;">
+                    Sebagai Pilot Drone, saya bertanggung jawab untuk mengoperasikan UAV (DJI Mavic 2 Zoom) dalam
+                    akuisisi citra udara resolusi tinggi di kawasan pesisir Kabupaten Bantul. Tugas saya mencakup
+                    perencanaan jalur terbang, pengambilan data foto udara, serta koordinasi dengan tim survei darat
+                    dalam penentuan titik Ground Control Point (GCP). Data hasil pemotretan udara yang saya kumpulkan
+                    digunakan untuk pembuatan orthomosaic, Digital Elevation Model (DEM), dan analisis perubahan garis
+                    pantai. Kontribusi ini menjadi dasar dalam identifikasi risiko abrasi dan perumusan strategi
+                    mitigasi bencana pesisir.
+                </p>
+                <div class="modal-layout">
+                    <div class="modal-image-section enlarged">
+                        <div class="modal-slider">
+                            <div class="slide active">
+                                <img src="../Logo/Drone/Abrasi/Pandansimo.jpg" alt="Pantai Pandansimo">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Abrasi/Kuwaru.jpg" alt="Pantai Kuwaru">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Abrasi/Samas.jpg" alt="Pantai Samas">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Abrasi/Depok.jpg" alt="Pantai Depok">
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="prev-btn" onclick="changeSlide('modal2', -1)">❮</button>
+                            <button class="next-btn" onclick="changeSlide('modal2', 1)">❯</button>
+                        </div>
+                        <div class="slide-indicators" id="indicators-modal2"></div>
+                    </div>
+                    <div class="modal-content-section">
+                        <div class="slide-content active">
+                            <h3 class="slide-title">Pantai Pandansimo</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Status Abrasi</h4>
+                                    <p class="detail-text">Rendah — Laju abrasi ±2,46 m/tahun</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Pemetaan kawasan strategis</li>
+                                        <li>Monitoring perubahan garis pantai</li>
+                                        <li>Analisis kerentanan lingkungan pesisir</li>
+                                        <li>Rekomendasi mitigasi awal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Pantai Kuwaru</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Status Abrasi</h4>
+                                    <p class="detail-text">Tinggi — Laju abrasi ±3,2 m/tahun</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Identifikasi area terdampak abrasi parah</li>
+                                        <li>Analisis dampak pada permukiman dan infrastruktur</li>
+                                        <li>Monitoring kerusakan bangunan pesisir</li>
+                                        <li>Strategi relokasi dan penguatan kawasan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Pantai Samas</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Status Abrasi</h4>
+                                    <p class="detail-text">Sedang – Tinggi — Laju abrasi ±4,2 m/tahun</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Pemetaan dinamika garis pantai</li>
+                                        <li>Analisis dampak abrasi terhadap laguna dan muara sungai</li>
+                                        <li>Monitoring hilangnya lahan pertanian dan permukiman</li>
+                                        <li>Strategi mitigasi berbasis ekosistem</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Pantai Depok</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kabupaten Bantul, DIY</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Status Abrasi</h4>
+                                    <p class="detail-text">Rendah — Laju abrasi ±0,9 m/tahun</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Analisis abrasi pada area wisata</li>
+                                        <li>Monitoring perubahan lanskap pesisir</li>
+                                        <li>Pemetaan risiko infrastruktur ekonomi (warung dan jalur wisata)</li>
+                                        <li>Rekomendasi pengelolaan kawasan wisata berkelanjutan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Morfosedimen (Fixed Structure) -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-category urban">Morfosedimen</span>
+                    <h2 class="modal-title">Pemetaan Morfosedimen Pantai</h2>
+                </div>
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" style="text-align: justify;">
+                    Melakukan pemetaan morfosedimen di wilayah pesisir Gunung Kidul dan Bantul yang aktif. Pekerjaan
+                    meliputi akuisisi foto udara menggunakan Drone Phantom 4 RTK, pengambilan sampel pasir, pengukuran
+                    topografi, pengukuran profil melintang pantai untuk mengidentifikasi pola sedimentasi yang
+                    mempengaruhi proses abrasi pantai.
+                </p>
+
+                <div class="modal-slider-container">
+                    <div class="modal-slider">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <div class="slide-images">
+                                <div class="image-wrapper">
+                                    <img src="../Logo/Drone/Sedimentasi/Drini.jpg" alt="Ortho">
+                                    <div class="overlay">Orthophoto</div>
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../Logo/Drone/Sedimentasi/FU Drini.JPG" alt="Foto Udara">
+                                    <div class="overlay">Foto Udara</div>
+                                </div>
+                            </div>
+                            <div class="slide-content-text">
+                                <h3 class="slide-title">Pantai Kabupaten Gunungkidul</h3>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>15 Lokasi Survey</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>
+                                        <span>Agustus 2024</span>
+                                    </div>
+                                </div>
+                                <p class="slide-description" style="text-align: justify;">
+                                    Akuisisi data dilakukan pada wilayah pesisir karst di Kabupaten Gunung Kidul yang
+                                    memiliki kontur tebing curam dan perbedaan elevasi signifikan. Flight planning
+                                    disusun menggunakan pola grid adaptif pada ketinggian 100–120 meter AGL, dengan
+                                    konfigurasi front overlap dan side overlap sebesar 75%. Misi terbang dibagi ke
+                                    beberapa segmen untuk menyesuaikan perubahan elevasi dan menghindari turbulensi
+                                    angin di sekitar tebing. Data hasil pemotretan kemudian diolah menjadi orthophoto
+                                    resolusi tinggi dan model elevasi digital (DEM) untuk analisis perubahan morfologi
+                                    tebing dan identifikasi potensi abrasi vertikal.
+                                </p>
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h4 class="detail-title">Peralatan Utama</h4>
+                                        <ul class="detail-list">
+                                            <li>DJI Phantom 4 RTK untuk pemetaan udara</li>
+                                            <li>GPS Geodetik Navcom untuk pembuatan profil pantai</li>
+                                            <li>Peralatan sampling sedimen</li>
+                                            <li>TLS Leica untuk pemetaan topografi pantai</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="slide-images">
+                                <div class="image-wrapper">
+                                    <img src="../Logo/Drone/Sedimentasi/Pandansimo.jpg" alt="Ortho">
+                                    <div class="overlay">Orthophoto</div>
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../Logo/Drone/Sedimentasi/FU Pandansimo.JPG" alt="Foto Udara">
+                                    <div class="overlay">Foto Udara</div>
+                                </div>
+                            </div>
+                            <div class="slide-content-text">
+                                <h3 class="slide-title">Pantai Kabupaten Bantul</h3>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>6 Lokasi Survey</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>
+                                        <span>Agustus 2024</span>
+                                    </div>
+                                </div>
+                                <p class="slide-description" style="text-align: justify;">
+                                    Akuisisi data dilaksanakan di kawasan pesisir Kabupaten Bantul yang didominasi area
+                                    berpasir dan vegetasi pantai dengan kontur relatif landai. Flight planning dirancang
+                                    menggunakan pola grid lurus pada ketinggian 100–120 meter AGL, dengan pengaturan
+                                    front overlap dan side overlap sebesar 75% untuk memastikan cakupan area secara
+                                    merata. Pembagian misi terbang disesuaikan dengan kondisi angin pesisir agar jalur
+                                    terbang tetap stabil. Data yang terkumpul selanjutnya diolah menjadi orthophoto
+                                    resolusi tinggi dan model elevasi digital (DEM) untuk monitoring perubahan garis
+                                    pantai serta pemanfaatan ruang pesisir.
+                                </p>
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h4 class="detail-title">Peralatan Utama</h4>
+                                        <ul class="detail-list">
+                                            <li>DJI Phantom 4 RTK untuk pemetaan udara</li>
+                                            <li>GPS Geodetik Navcom untuk pembuatan profil pantai</li>
+                                            <li>Peralatan sampling sedimen</li>
+                                            <li>TLS Leica untuk pemetaan topografi pantai</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="changeSlide('modal3', -1)">❮</button>
+                        <button class="next-btn" onclick="changeSlide('modal3', 1)">❯</button>
+                    </div>
+
+                    <!-- Slide Indicators -->
+                    <div class="slide-indicators" id="indicators-modal3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Pertanian -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-category pertanian">Pertanian</span>
+                    <h2 class="modal-title">Pemetaan Perkebunan Tebu</h2>
+                </div>
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-description">
+                    <p style="text-align: justify; margin-bottom: 1rem;">
+                        <strong>Lokasi:</strong> Lampung Utara (PTPN Sektor VII)
+                    </p>
+                    <p style="text-align: justify;">
+                        Pemetaan Perkebunan Tebu dengan sensor multispektral untuk optimalisasi penggunaan pupuk dan
+                        monitoring kesehatan tanaman. Proyek ini menggunakan teknologi drone canggih untuk menganalisis
+                        kondisi tanaman tebu secara real-time dan memberikan rekomendasi pengelolaan yang tepat sasaran.
+                    </p>
+                </div>
+
+                <div class="modal-layout">
+                    <div class="modal-image-section">
+                        <div class="modal-slider">
+                            <div class="slide active">
+                                <img src="../Logo/Drone/Pertanian/AOI.jpg" alt=" AOI">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Pertanian/PTPN.jpg" alt=" GPS">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Pertanian/GCP.jpg" alt=" GCP">
+                            </div>
+                            <div class="slide">
+                                <img src="../Logo/Drone/Pertanian/Foto Udara.JPG" alt=" Foto Udara">
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="prev-btn" onclick="changeSlide('modal4', -1)">❮</button>
+                            <button class="next-btn" onclick="changeSlide('modal4', 1)">❯</button>
+                        </div>
+                        <div class="slide-indicators" id="indicators-modal4"></div>
+                    </div>
+
+                    <div class="modal-content-section">
+                        <div class="slide-content active">
+                            <h3 class="slide-title">Pembuatan Jalur Terbang</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kebun Tebu Bunga Mayang, PTPN VII</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>Juni 2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Jalur terbang disusun berbasis grid sesuai blok tanaman dengan pengaturan overlap ideal
+                                untuk pemrosesan multispektral. Posisi GCP dimasukkan ke dalam workflow pemetaan guna
+                                sinkronisasi koordinat saat orthorektifikasi.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <p class="detail-text">Pilot Drone</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Visualisasi lintasan terbang dan batas area pada layar remote</li>
+                                        <li>Estimasi durasi misi & jumlah foto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-content">
+                            <h3 class="slide-title">Persiapan Alat</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kebun Tebu Bunga Mayang, PTPN VII</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>Juni 2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Sebelum terbang, dilakukan sinkronisasi antara drone Mavic 3M, controller, dan base
+                                station RTK. Kalibrasi IMU, kompas, serta pengecekan kondisi angin dilakukan untuk
+                                memastikan penerbangan stabil dan aman di area kebun.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <p class="detail-text">Pilot Drone</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Alat yang digunakan</h4>
+                                    <ul class="detail-list">
+                                        <li>Drone DJI Mavic 3 Multispektral</li>
+                                        <li>GPS Geodetik Navcom</li>
+                                        <li>RTK Base Station</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-content">
+                            <h3 class="slide-title">Pengukuran Ground Control Point (GCP)</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kebun Tebu Bunga Mayang, PTPN VII</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>Juni 2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Pengukuran titik kontrol tanah (GCP) menggunakan GNSS RTK presisi sentimeter. Titik ini
+                                digunakan sebagai acuan geospasial untuk meningkatkan akurasi ortofoto dan model elevasi
+                                hasil pemetaan dari drone Mavic 3 Multispectral.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <p class="detail-text">Pilot Drone</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Titik kontrol tanah dengan koordinat presisi sentimeter</li>
+                                        <li>Data referensi geospasial untuk koreksi ortho & DEM</li>
+                                        <li>Laporan kualitas sinyal satelit dan baseline RTK</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-content">
+                            <h3 class="slide-title">Akuisisi Foto Udara</h3>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Kebun Tebu Bunga Mayang, PTPN VII</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>
+                                    <span>Juni 2024</span>
+                                </div>
+                            </div>
+                            <p class="slide-description" style="text-align: justify;">
+                                Pengambilan citra dilakukan secara otomatis melalui mode mapping. Sensor multispektral
+                                (Red, Green, Blue, Red Edge, dan Near Infrared) menghasilkan dataset lengkap untuk
+                                analisis kesehatan tanaman seperti NDVI dan NDRE.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Peran</h4>
+                                    <p class="detail-text">Pilot Drone</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4 class="detail-title">Output</h4>
+                                    <ul class="detail-list">
+                                        <li>Kumpulan citra RGB & multispektral (R, G, B, RE, NIR)</li>
+                                        <li>Metadata penerbangan (altitude, overlap, exposure)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
